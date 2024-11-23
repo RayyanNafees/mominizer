@@ -1,16 +1,80 @@
 ---
-return Astro.redirect('/salat')
+import Base from '@/layouts/base.astro'
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Base>
+  <article class="rounded-xl border-2 border-emerald-900 shadow">
+    <section class="flex justify-between rounded-lg rounded-b-none bg-emerald-700 p-2 shadow">
+      <div class="">
+        <div class="text-lg text-emerald-100">Masjid Sulaiman Hall</div>
+        <div class="flex items-center gap-1 rounded bg-emerald-800 px-1.5 py-px text-xs font-semibold text-emerald-300"><img src="https://api.iconify.design/mdi:map-marker.svg?color=%2369dcae" alt="" /><span>Sulaiman Hall, AMU</span></div>
+      </div>
+      <div>
+        <div class="text-lg text-emerald-100">3:00 pm</div>
+        <div class="flex items-center gap-1 text-xs font-semibold text-emerald-200">
+          <img src="https://api.iconify.design/mdi:walk.svg?color=%23a0e9c8" />
+          <span>4 mins</span>
+        </div>
+      </div>
+    </section>
+    <div class="space-y-1 p-4">
+      <section class="relative flex justify-between rounded-lg bg-emerald-900 p-2 shadow">
+        <div>
+          <div class="text-lg text-emerald-100">Fajr</div>
+          <div class="rounded bg-emerald-800 px-1.5 py-px text-xs font-semibold text-emerald-300">3 adhkar</div>
+        </div>
+        <div>
+          <div class="text-lg text-emerald-100">3:00 pm</div>
+          <div class="text-xs font-semibold text-emerald-500">2pm - 4pm</div>
+        </div>
+        <span class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-xs font-semibold text-emerald-400">+ ₹5</span>
+      </section>
+
+      <section class="00 relative flex justify-between rounded-lg rounded-b-none bg-emerald-900 p-2 shadow">
+        <div>
+          <div class="text-lg text-emerald-100">Zuhr</div>
+          <div class="rounded bg-emerald-800 px-1.5 py-px text-xs font-semibold text-emerald-300">3 adhkar</div>
+        </div>
+        <div>
+          <div class="text-lg text-emerald-100">3:00 pm</div>
+          <div class="text-xs font-semibold text-emerald-500">2pm - 4pm</div>
+        </div>
+        <span class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-xs font-semibold text-rose-400"> - ₹5</span>
+      </section>
+      <section class="relative -top-1 flex justify-between rounded-lg rounded-t-none border-2 border-emerald-900 p-1 px-4 text-xs font-semibold text-emerald-200">
+        <div>ishrak</div>
+        <div>4pm-5pm</div>
+      </section>
+      <section class="flex justify-between rounded-lg border-2 border-emerald-700 bg-emerald-800 p-2 shadow">
+        <div>
+          <div class="text-lg text-emerald-100">Asr</div>
+          <div class="rounded bg-emerald-900 px-1.5 py-px text-xs font-semibold text-emerald-300">3 adhkar</div>
+        </div>
+        <div>
+          <div class="text-lg text-emerald-100">3:00 pm</div>
+          <div class="text-xs font-semibold text-emerald-400">2pm - 4pm</div>
+        </div>
+      </section>
+      <section class="flex justify-between rounded-lg bg-emerald-900 p-2 shadow">
+        <div>
+          <div class="text-lg text-emerald-100">Maghrib</div>
+          <div class="rounded bg-emerald-800 px-1.5 py-px text-xs font-semibold text-emerald-300">3 adhkar</div>
+        </div>
+        <div>
+          <div class="text-lg text-emerald-100">3:00 pm</div>
+          <div class="text-xs font-semibold text-emerald-500">2pm - 4pm</div>
+        </div>
+      </section>
+      <section class="flex justify-between rounded-lg bg-emerald-900 p-2 shadow">
+        <div>
+          <div class="text-lg text-emerald-100">Isha</div>
+          <div class="rounded bg-emerald-800 px-1.5 py-px text-xs font-semibold text-emerald-300">3 adhkar</div>
+        </div>
+        <div>
+          <div class="text-lg text-emerald-100">3:00 pm</div>
+          <div class="text-xs font-semibold text-emerald-500">2pm - 4pm</div>
+        </div>
+      </section>
+    </div>
+  </article>
+</Base>
