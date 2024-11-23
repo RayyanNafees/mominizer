@@ -8,6 +8,6 @@ import vercel from '@astrojs/vercel/serverless';
 // https://astro.build/config
 export default defineConfig({
   integrations: [preact(), tailwind()],
-  output: 'server',
-  adapter: vercel({isr: true})
+  output: 'hybrid',
+  adapter: vercel({isr: true}),
 });
