@@ -1,0 +1,58 @@
+---
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Mominizer | My AMU Deen App</title>
+  </head>
+  <body class="bg-emerald-950 min-h-screen relative w-full text-white;">
+    <header class="w-full absolute top-0">
+      <nav class="w-full flex justify-between bg-emerald-600 p-2 text-white">
+        <div class="flex items-center gap-3">
+          <img src="https://api.iconify.design/mdi:menu.svg?color=whitesmoke" class="size-8" />
+          <p class="text-2xl font-semibold">Mominizer</p>
+        </div>
+        <div class="flex items-center gap-4">
+          <img src="https://api.iconify.design/mdi:bell-outline.svg?color=white" class="size-6" />
+          <img src="https://picsum.photos/25" class="rounded-full border-2 border-emerald-900" />
+        </div>
+      </nav>
+    </header>
+    <main class="relative min-h-screen overflow-y-auto px-4 py-16">
+      <slot />
+      <button class="absolute bottom-16 right-4 flex items-center gap-2 rounded-l-full rounded-r-full bg-emerald-500 bg-opacity-30 px-4 py-1 text-emerald-50">
+        <img src="https://api.iconify.design/hugeicons:muslim.svg?color=%23e6f6ee" class="size-5" />
+        <span>Khizr AI</span>
+      </button>
+    </main>
+    <footer class="w-full absolute bottom-0 left-0">
+      <div class="w-full flex justify-evenly bg-emerald-500 py-1 text-white">
+        <div class="flex w-2/12 flex-col items-center rounded bg-emerald-300 p-1">
+          <img src="https://api.iconify.design/hugeicons:sujood.svg?color=%23064e3b&flip=horizontal" class="size-6" />
+          <span class="text-xs font-semibold lowercase text-emerald-900">Salat</span>
+        </div>
+    
+        <div class="flex w-2/12 flex-col items-center rounded bg-emerald-500 p-1">
+          <img src="https://api.iconify.design/hugeicons:tasbih.svg?color=%23064e3b" class="size-6" />
+          <span class="text-xs font-semibold lowercase text-emerald-900">Adhkar</span>
+        </div>
+    
+        <div class="flex w-2/12 flex-col items-center rounded bg-emerald-500 p-1">
+          <img src="https://api.iconify.design/hugeicons:quran-01.svg?color=%23064e3b" class="size-6" />
+          <span class="text-xs font-semibold lowercase text-emerald-900">Hifz</span>
+        </div>
+        <div class="flex w-2/12 flex-col items-center rounded bg-emerald-500 p-1">
+          <img src="https://api.iconify.design/hugeicons:quran-02.svg?color=%23064e3b" class="size-6" />
+          <span class="text-xs font-semibold lowercase text-emerald-900">Hadith</span>
+        </div>
+        <div class="flex w-2/12 flex-col items-center rounded bg-emerald-500 p-1">
+          <img src="https://api.iconify.design/ooui:bold-arab-ain.svg?color=%23064e3b" class="size-6" />
+          <span class="text-xs font-semibold lowercase text-emerald-900">Arabic</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
